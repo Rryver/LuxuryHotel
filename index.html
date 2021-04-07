@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="styles/css/cssReset.css">
-    <link rel="stylesheet" href="styles/css/main.css">
-    <link rel="stylesheet" href="styles/css/media.css">
+    <link rel="stylesheet" href="styles/css/site.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <section class="top">
     <header class="header top__container">
+        <button class="menu-button" onclick="menuOpenClose()">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+        </button>
         <div class="logo">
             <span class="logo__caption_big">LUXURY</span>
             <span class="logo__caption_small">HOTELS</span>
@@ -35,7 +39,7 @@
             <img src="images/icons/house.svg" alt="" class="button__icon">
             <span class="button__caption">BOOK NOW</span>
         </a>
-        <div class="div scroll">
+        <div class="scroll">
             <span class="scroll__caption">Scroll</span>
             <a href="#" class="scroll__btn"><img src="images/icons/arrow-down.svg" alt="icon-scroll" class="scroll__icon"></a>
         </div>
@@ -57,6 +61,15 @@
                 <a href="#" class="button"><span class="button__caption">EXPLORE</span></a>
             </div>
             <img src="images/offers_preview_images/offer-LuxuryRedefined.png" alt="preview" class="offer__image">
+            <div class="offer__info_small-screen">
+                <span class="offer__description">
+                    Our rooms are designed to transport
+                    you into an environment made for leisure.
+                    Take your mind off the day-to-day of home
+                    life and find a private paradise for yourself.
+                </span>
+                <a href="#" class="button"><span class="button__caption">EXPLORE</span></a>
+            </div>
         </li>
         <li class="offer">
             <div class="offer__info">
@@ -71,6 +84,14 @@
                 <a href="#" class="button"><span class="button__caption">EXPLORE</span></a>
             </div>
             <img src="images/offers_preview_images/offer-LeaveYourWorriesInTheSand.png" alt="preview" class="offer__image">
+            <div class="offer__info_small-screen">
+                <span class="offer__description">
+                    Our rooms are designed to transport
+                    you into an environment made for leisure.
+                    Take your mind off the day-to-day of home
+                    life and find a private paradise for yourself.
+                </span>
+                <a href="#" class="button"><span class="button__caption">EXPLORE</span></a>
         </li>
     </ul>
 
@@ -86,48 +107,50 @@
 </section>
 
 <footer class="footer">
-    <div class="company-info">
-        <div class="company-info__logo">
-            <span class="company-info__caption_big">LUXURY</span>
-            <span class="company-info__caption_small">HOTELS</span>
+    <div class="footer__container">
+        <div class="company-info">
+            <div class="company-info__logo">
+                <span class="company-info__caption_big">LUXURY</span>
+                <span class="company-info__caption_small">HOTELS</span>
+            </div>
+            <span class="company-info__text">497 Evergreen Rd. Roseville, CA 95673</span>
+            <span class="company-info__text"><a href="tel:+44 345 678 903" class="company-info__phone company-info__text">+44 345 678 903</a></span>
+            <span class="company-info__text"><a href="mailto:luxury_hotels@gmail.com" class="company-info__email company-info__text">luxury_hotels@gmail.com</a></span>
         </div>
-        <span class="company-info__text">497 Evergreen Rd. Roseville, CA 95673</span>
-        <span class="company-info__text"><a href="tel:+44 345 678 903" class="company-info__phone company-info__text">+44 345 678 903</a></span>
-        <span class="company-info__text"><a href="mailto:luxury_hotels@gmail.com" class="company-info__email company-info__text">luxury_hotels@gmail.com</a></span>
-    </div>
 
-    <ul class="links">
-        <li class="links__item"><a href="#" class="links__link">About Us</a></li>
-        <li class="links__item"><a href="#" class="links__link">Contact</a></li>
-        <li class="links__item"><a href="#" class="links__link">Terms & Conditions</a></li>
-    </ul>
+        <ul class="links">
+            <li class="links__item"><a href="#" class="links__link">About Us</a></li>
+            <li class="links__item"><a href="#" class="links__link">Contact</a></li>
+            <li class="links__item"><a href="#" class="links__link">Terms & Conditions</a></li>
+        </ul>
 
-    <ul class="social-links">
-        <li class="social-links__item">
-            <a href="#" class="social-links__link">
-                <img src="images/icons/facebook.svg" alt="icon" class="social-links__icon">
-                <span class="social-links__text">Facebook</span>
-            </a>
-        </li>
-        <li class="social-links__item">
-            <a href="#" class="social-links__link">
-                <img src="images/icons/twitter.png" alt="icon" class="social-links__icon">
-                <span class="social-links__text">Twitter</span>
-            </a>
-        </li>
-        <li class="social-links__item">
-            <a href="#" class="social-links__link">
-                <img src="images/icons/instagram.svg" alt="icon" class="social-links__icon">
-                <span class="social-links__text">Instagram</span>
-            </a>
-        </li>
-    </ul>
+        <ul class="social-links">
+            <li class="social-links__item">
+                <a href="#" class="social-links__link">
+                    <img src="images/icons/facebook.svg" alt="icon" class="social-links__icon">
+                    <span class="social-links__text">Facebook</span>
+                </a>
+            </li>
+            <li class="social-links__item">
+                <a href="#" class="social-links__link">
+                    <img src="images/icons/twitter.png" alt="icon" class="social-links__icon">
+                    <span class="social-links__text">Twitter</span>
+                </a>
+            </li>
+            <li class="social-links__item">
+                <a href="#" class="social-links__link">
+                    <img src="images/icons/instagram.svg" alt="icon" class="social-links__icon">
+                    <span class="social-links__text">Instagram</span>
+                </a>
+            </li>
+        </ul>
 
-    <div class="subscribe">
-        <span class="subscribe__title">Subscribe to our newsletter</span>
-        <div class="subscribe-form">
-            <input type="text" class="subscribe-form__input" placeholder="Email Address">
-            <button class="subscribe-form__button-submit">OK</button>
+        <div class="subscribe">
+            <span class="subscribe__title">Subscribe to our newsletter</span>
+            <div class="subscribe-form">
+                <input type="text" class="subscribe-form__input" placeholder="Email Address">
+                <button class="subscribe-form__button-submit">OK</button>
+            </div>
         </div>
     </div>
 </footer>

@@ -19,6 +19,7 @@
 
     &__icon {
         margin-right: 18px;
+        vertical-align: top;
     }
 
     &__caption {
@@ -48,17 +49,36 @@
     &__caption:hover {}
 }
 
+.hidden {
+    display: none;
+}
+
 //TOP
 .top {
-    background-color: #9c9c9c;
-    //background-image: url("../../images/backgrounds/background-01.png");
+    //background-color: #9c9c9c;
+    position: relative;
+    background-image: url("../../images/backgrounds/background-01.png");
     background-position: center center, center center;
     background-repeat: no-repeat, no-repeat;
+
+    &:before {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: @color-black;
+        opacity: 0.5;
+        z-index: 1;
+    }
 
     &__container {
         max-width: 1500px;
         margin: 0 auto;
         padding: 0 80px;
+        z-index: 2;
     }
 }
 
@@ -66,6 +86,7 @@
 .header {
     display: flex;
     justify-content: space-between;
+    position: relative;
     margin-bottom: 193px;
 
     .logo {
@@ -122,6 +143,7 @@
             font-size: 25px;
             line-height: 30px;
             color: @color-white;
+            transition: all ease .2s;
 
             &:hover {
                 border-bottom: 2px solid @color-white;
@@ -130,8 +152,43 @@
     }
 }
 
+.menu-button {
+    //display: flex;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    width: 50px;
+    height: 45px;
+    background: @color-black;
+    left: 22px;
+    top: 22px;
+    outline: none;
+    border: 1px solid @color-buttons-common;
+    border-radius: 2px;
+    transition: all ease .2s;
+
+    &__line {
+        display: inline-block;
+        background: @color-buttons-common;
+        width: 100%;
+        height: 2px;
+        transition: all ease .2s;
+    }
+
+    &:hover {
+        cursor: pointer;
+        border-color: @color-buttons-hover;
+    }
+
+    &:hover>&__line {
+        background: @color-buttons-hover;
+    }
+}
+
 
 .top__content {
+    position: relative;
     text-align: center;
     padding-bottom: 38px;
 
@@ -148,7 +205,7 @@
         }
 
         &__caption_big {
-            font-family: 'EB Garamond', serif;
+            font-family: @fontFamily-text-captions;
             font-style: normal;
             font-weight: @font-weight-bold;
             font-size: 154px;
@@ -159,7 +216,7 @@
 
         &__caption_medium {
             margin-top: -20px;
-            font-family: 'EB Garamond', serif;
+            font-family: @fontFamily-text-captions;
             font-style: normal;
             font-weight: @font-weight-bold;
             font-size: 60px;
@@ -189,6 +246,7 @@
 
 .content {
     text-align: center;
+    margin: 0 auto;
 
     .caption {
         display: block;
@@ -255,8 +313,15 @@
         width: 55%;
         height: auto;
     }
-}
 
+    &__info_small-screen {
+        display: none;
+
+        .offer__description {
+            display: inline-block;
+        }
+    }
+}
 @media (max-width: 1400px) {
     .offer__image {
         //width: 600px;
@@ -326,15 +391,16 @@
 
 
 .footer {
-    max-width: 1500px;
-    margin: 0 auto;
     padding: 90px 80px 66px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     background: #14274A;
 
-
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
 }
 
 .company-info {
