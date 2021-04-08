@@ -501,27 +501,6 @@
     line-height: 22px !important;
   }
 }
-@media (max-width: 900px) {
-  .offer {
-    flex-direction: column;
-    border-left: 2px solid #14274A;
-  }
-  .offer__description {
-    display: none;
-  }
-  .offer__info {
-    border-left: none;
-    padding-left: 48px;
-  }
-  .offer__info .button {
-    display: none;
-  }
-  .offer__info_small-screen {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
 @media (max-width: 740px) {
   .header {
     padding: 0;
