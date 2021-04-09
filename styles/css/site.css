@@ -1,4 +1,4 @@
-.button {
+.link-button {
   display: inline-block;
   background: #E0B973;
   min-width: 236px;
@@ -97,6 +97,9 @@
   display: inline-block;
   align-self: center;
   margin-left: 80px;
+}
+.header .nav-menu__hidden {
+  display: none !important;
 }
 .header .nav-menu__item {
   display: inline-block;
@@ -309,15 +312,19 @@
   vertical-align: middle;
 }
 .footer {
-  padding: 90px 80px 66px;
+  padding: 90px 70px 66px;
   background: #14274A;
 }
 .footer__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   max-width: 1500px;
   margin: 0 auto;
+}
+.footer__container > * {
+  padding: 0 10px;
 }
 .company-info {
   display: inline-block;
@@ -500,12 +507,50 @@
     font-size: 19px !important;
     line-height: 22px !important;
   }
+  .footer__container .company-info,
+  .footer__container .links {
+    margin-bottom: 55px;
+  }
+}
+@media (max-width: 900px) {
+  .offer {
+    flex-direction: column;
+    border-left: 2px solid #14274A;
+    padding-left: 30px;
+  }
+  .offer__description {
+    display: none;
+  }
+  .offer__info {
+    border-left: none;
+    width: 100%;
+    padding-left: 0;
+    margin-right: 0;
+  }
+  .offer__info .link-button {
+    display: none;
+  }
+  .offer__image {
+    width: 100%;
+  }
+  .offer__info_small-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 31px;
+  }
+  .offer__info_small-screen .link-button {
+    align-self: center;
+  }
 }
 @media (max-width: 740px) {
   .header {
     padding: 0;
     background: #14274A;
     margin-bottom: 95px;
+    z-index: 3;
   }
   .header .top__container {
     padding: 0;
@@ -517,7 +562,6 @@
     margin-bottom: 0;
   }
   .nav-menu {
-    display: none;
     flex-direction: column;
     align-items: center;
     position: absolute;
@@ -579,6 +623,21 @@
     font-size: 20px;
     line-height: 35px;
   }
+  .testimonials__title {
+    font-size: 50px;
+    line-height: 54px;
+  }
+  .testimonials__text {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .testimonials__author {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .footer {
+    padding: 90px 12px 66px;
+  }
 }
 @media (max-width: 450px) {
   .header .logo {
@@ -627,7 +686,7 @@
     font-size: 13px !important;
     line-height: 20px !important;
   }
-  .button {
+  .link-button {
     min-width: 200px;
     padding: 15px 19px 14px 19px;
   }

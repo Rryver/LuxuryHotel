@@ -8,12 +8,24 @@ function calculatePadding() {
     }
 }
 
+let menu = document.querySelector('.nav-menu');
+function checkWidth(currentWidth) {
+    if (currentWidth.matches) {
+        menu.classList.add('nav-menu__hidden');
+    } else {
+        menu.classList.remove('nav-menu__hidden');
+    }
+}
+let currentWidth = window.matchMedia("(max-width: 740px)");
+checkWidth(currentWidth);
+currentWidth.addListener(checkWidth);
+
 
 function menuOpenClose() {
-    let menu = document.getElementsByClassName("nav-menu")[0];
-    if (menu.style.display !== "none") {
-        menu.style.display = "none";
+    console.log(menu.classList);
+    if (!menu.classList.contains('nav-menu__hidden')) {
+        menu.classList.add('nav-menu__hidden');
     } else {
-        menu.style.display = "flex";
+        menu.classList.remove('nav-menu__hidden');
     }
 }
