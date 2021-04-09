@@ -1,0 +1,45 @@
+.subscribe-form {
+    display: block;
+
+    @form-height: 52px;
+    &__input {
+        height: @form-height;
+        vertical-align: middle;
+        padding-left: 28px;
+        background: #14274A;
+        border: 1px solid @color-buttons-common;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        font-style: normal;
+        font-weight: @font-weight-normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: @color-white;
+        outline: none;
+
+        &::placeholder {
+            font-style: normal;
+            font-weight: @font-weight-normal;
+            font-size: 16px;
+            line-height: 20px;
+            color: @color-white;
+        }
+    }
+
+    &__button-submit {
+        margin-left: -4px;
+        vertical-align: middle;
+        width: 80px;
+        height: @form-height;
+        background: @color-buttons-common;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border: none;
+        outline: none;
+
+        &:hover {
+            cursor: pointer;
+            background: @color-buttons-hover;
+        }
+    }
+}

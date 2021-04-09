@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 193px;
+}
+
+@media (max-width: 1095px) {
+    .header {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 740px) {
+    .header {
+        padding: 0;
+        background: @color-black;
+        margin-bottom: 95px;
+        z-index: 3;
+
+        .top__container {
+            padding: 0;
+        }
+    }
+}

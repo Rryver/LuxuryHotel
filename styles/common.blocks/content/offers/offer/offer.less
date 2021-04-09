@@ -1,0 +1,109 @@
+.offer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &__info {
+        display: inline-block;
+        margin-right: 93px;
+        text-align: left;
+        border-left: 2px solid @color-black;
+        padding-left: 48px;
+    }
+
+    &__title {
+        margin-bottom: 25px;
+        margin-top: -16px;
+        font-family: @fontFamily-text-captions;
+        font-style: normal;
+        font-weight: @font-weight-bold;
+        font-size: 60px;
+        line-height: 72px;
+        letter-spacing: .02em;
+        color: @color-black;
+    }
+
+    &__description {
+        display: inline-block;
+        margin-bottom: 31px;
+        font-style: normal;
+        font-weight: @font-weight-normal;
+        font-size: 25px;
+        line-height: 40px;
+        color: @color-black;
+    }
+
+    &__image {
+        //width: 864px;
+        width: 55%;
+        height: auto;
+    }
+
+    &__info_small-screen {
+        display: none;
+
+        .offer__description {
+            display: inline-block;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .offer {
+        flex-direction: column;
+        border-left: 2px solid @color-black;
+        padding-left: 30px;
+
+        &__description {
+            display: none;
+        }
+
+        &__info {
+            border-left: none;
+            width: 100%;
+            padding-left: 0;
+            margin-right: 0;
+
+            .link-button {
+                display: none;
+            }
+        }
+
+        &__image {
+            width: 100%;
+        }
+
+        &__info_small-screen {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            text-align: left;
+            margin-top: 31px;
+
+            .link-button {
+                align-self: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 740px) {
+    .offer {
+        &__title {
+            font-size: 55px;
+            line-height: 65px;
+        }
+
+        &__description {
+            font-size: 20px;
+            line-height: 35px;
+        }
+    }
+}

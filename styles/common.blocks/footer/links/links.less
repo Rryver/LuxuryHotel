@@ -1,0 +1,36 @@
+@links-color: #F7F7F7;
+
+.links {
+
+    display: inline-block;
+
+    &__item {
+        display: block;
+        margin-bottom: 24px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        font-style: normal;
+        font-weight: @font-weight-normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: @links-color;
+
+        &:hover {
+            border-bottom: 1px solid @links-color;
+        }
+    }
+}
+
+
+@media (max-width: 1095px) {
+    .footer__container {
+        .links {
+            margin-bottom: 55px;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.footer {
+    padding: 90px 70px 66px;
+    background: #14274A;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1500px;
+        margin: 0 auto;
+
+        & > * {
+            padding: 0 10px;
+        }
+    }
+}
+
+
+@media (max-width: 740px) {
+    .footer {
+        padding: 90px 12px 66px;
+    }
+}

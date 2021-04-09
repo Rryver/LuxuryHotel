@@ -1,0 +1,39 @@
+.social-links {
+    display: inline-block;
+
+    &__item {
+        display: block;
+        margin-bottom: 22px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__icon {
+        display: inline-block;
+        margin-right: 26px;
+        vertical-align: text-top;
+    }
+
+    &__link {
+        font-style: normal;
+        font-weight: @font-weight-normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: @links-color;
+
+        &:hover>.social-links__text {
+            border-bottom: 1px solid @links-color;
+        }
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: @font-weight-normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: @links-color;
+        vertical-align: baseline;
+    }
+}
