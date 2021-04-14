@@ -39,7 +39,6 @@ section {
 }
 .top {
   position: relative;
-  background-image: url("../../images/backgrounds/background-01.png");
   background-position: center center, center center;
   background-repeat: no-repeat, no-repeat;
 }
@@ -60,6 +59,12 @@ section {
   margin: 0 auto;
   padding: 0 80px;
   z-index: 2;
+}
+.top_background-image_home {
+  background-image: url("../../images/backgrounds/background-01.png");
+}
+.top_background-image_facilities {
+  background-image: url("../../images/backgrounds/palm-trees-at-night-258154_1.png");
 }
 @media (max-width: 740px) {
   .top .top__container {
@@ -570,6 +575,27 @@ section {
 }
 .comment-switcher__icon {
   vertical-align: middle;
+}
+.facilities__item {
+  position: relative;
+  margin-bottom: 140px;
+  text-align: center;
+}
+.facilities__img {
+  width: 100%;
+  height: auto;
+}
+.facilities__caption {
+  display: inline-block;
+  width: 684px;
+  margin-top: -70px;
+  background: #FFFFFF;
+  padding: 16px 120px 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  text-align: center;
 }
 .footer {
   padding: 90px 70px 66px;
