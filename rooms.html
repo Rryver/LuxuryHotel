@@ -3,8 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="styles/bundles/site.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+<section class="top top_background-image_facilities">
+    <header class="header top__container">
+        <button class="menu-button" onclick="menuOpenClose()">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+        </button>
+        <div class="logo">
+            <span class="logo__caption_big">LUXURY</span>
+            <span class="logo__caption_small">HOTELS</span>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-menu__item"><a href="index.html" class="nav-menu__link">Home</a></li>
+            <li class="nav-menu__item"><a href="facilities.html" class="nav-menu__link">Facilities</a></li>
+            <li class="nav-menu__item"><a href="rooms.html" class="nav-menu__link">Rooms</a></li>
+            <li class="nav-menu__item"><a href="contact-us.html" class="nav-menu__link">Contact-us</a></li>
+        </ul>
+    </header>
+    <div class="top__content top__container">
+        <div class="title">
+            <span class="title__caption_small">WELCOME TO</span>
+            <h1 class="title__caption_big">LUXURY</h1>
+            <h2 class="title__caption_medium">HOTELS</h2>
+            <span class="title__text">Book your stay and enjoy Luxury
+                redefined at the most affordable rates.</span>
+        </div>
+        <a href="#" class="link-button">
+            <img src="images/icons/house.svg" alt="" class="button__icon">
+            <span class="link-button__caption">BOOK NOW</span>
+        </a>
+        <div class="scroll">
+            <span class="scroll__caption">Scroll</span>
+            <a href="#" class="scroll__btn"><img src="images/icons/arrow-down.svg" alt="icon-scroll" class="scroll__icon"></a>
+        </div>
+    </div>
+</section>
 
+
+<section class="content content__container">
+    <div class="content__info info">
+        <span class="info__title title__caption_medium">ROOMS AND RATES</span>
+        <span class="info__text title__text">Each of our bright, light-flooded rooms come with everything you could
+            possibly need for a comfortable stay. And yes, comfort isn’t our only objective, we also value good design,
+            sleek contemporary furnishing complementedby the rich tones of nature’s palette as visible from our rooms’
+            sea-view windows and terraces.
+        </span>
+    </div>
+
+    <ul class="rooms">
+        <li class="rooms__item room">
+            <div class="room__image_container image_opacity_20-percents">
+                <img src="images/rooms/room-single-01.png" alt="" class="room__img">
+                <ul class="room__image-switch image-switch">
+                    <li class="image-switch__item"></li>
+                    <li class="image-switch__item"></li>
+                    <li class="image-switch__item"></li>
+                </ul>
+            </div>
+            <div class="room__name title_medium">Single room</div>
+            <div class="room__info"></div>
+        </li>
+        <li class="rooms__item room">
+            <div class="room__image_container image_opacity_20-percents">
+                <img src="images/rooms/room-double-01.png" alt="" class="room__img">
+                <ul class="room__image-switch image-switch">
+                    <li class="image-switch__item"></li>
+                    <li class="image-switch__item"></li>
+                    <li class="image-switch__item"></li>
+                </ul>
+            </div>
+            <div class="room__name title_medium">Double room</div>
+            <div class="room__info"></div>
+        </li>
+        <li class="rooms__item room">
+            <div class="room__image_container image_opacity_20-percents">
+                <img src="images/rooms/room-twin-01.png" alt="" class="room__img">
+                <ul class="room__image-switch image-switch">
+                    <li class="image-switch__item"></li>
+                    <li class="image-switch__item"></li>
+                    <li class="image-switch__item"></li>
+                </ul>
+            </div>
+            <div class="room__name title_medium">Twin room</div>
+            <div class="room__info">
+                <div class="room__details details">
+                    <ul class="details__list">
+                        <li class="details__item"><span class="details__property">Number of sleeping places:</span><span class="details__description">2</span></li>
+                        <li class="details__item"><span class="details__property">Microwave oven:</span><span class="details__description">yes</span></li>
+                    </ul>
+                </div>
+                <div class="room__buttons">
+                    <button class="room__btn-view-details btn-view-details">
+                        <div class="btn-view-details__circle">
+                            <span class="btn-view-details__line btn-view-details__line_horizontal"></span>
+                            <span class="btn-view-details__line btn-view-details__line-vertical"></span>
+                        </div>
+                        <span class="btn-view-details__text">VIEW ROOM DETAILS</span>
+                    </button>
+                    <a class="link-button"><span class="link-button__caption">$155 Avg/night</span></a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<footer class="footer">
+    <div class="footer__container">
+        <div class="company-info">
+            <div class="company-info__logo">
+                <span class="company-info__caption_big">LUXURY</span>
+                <span class="company-info__caption_small">HOTELS</span>
+            </div>
+            <span class="company-info__text">497 Evergreen Rd. Roseville, CA 95673</span>
+            <span class="company-info__text"><a href="tel:+44 345 678 903" class="company-info__phone company-info__text">+44 345 678 903</a></span>
+            <span class="company-info__text"><a href="mailto:luxury_hotels@gmail.com" class="company-info__email company-info__text">luxury_hotels@gmail.com</a></span>
+        </div>
+
+        <ul class="links">
+            <li class="links__item"><a href="#" class="links__link">About Us</a></li>
+            <li class="links__item"><a href="#" class="links__link">Contact</a></li>
+            <li class="links__item"><a href="#" class="links__link">Terms & Conditions</a></li>
+        </ul>
+
+        <ul class="social-links">
+            <li class="social-links__item">
+                <a href="#" class="social-links__link">
+                    <img src="images/icons/facebook.svg" alt="icon" class="social-links__icon">
+                    <span class="social-links__text">Facebook</span>
+                </a>
+            </li>
+            <li class="social-links__item">
+                <a href="#" class="social-links__link">
+                    <img src="images/icons/twitter.png" alt="icon" class="social-links__icon">
+                    <span class="social-links__text">Twitter</span>
+                </a>
+            </li>
+            <li class="social-links__item">
+                <a href="#" class="social-links__link">
+                    <img src="images/icons/instagram.svg" alt="icon" class="social-links__icon">
+                    <span class="social-links__text">Instagram</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="subscribe">
+            <span class="subscribe__title">Subscribe to our newsletter</span>
+            <div class="subscribe-form">
+                <input type="text" class="subscribe-form__input" placeholder="Email Address">
+                <button class="subscribe-form__button-submit">OK</button>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="js/main.js"></script>
+<script src="styles/common.blocks/footer/social-links/social-links.js"></script>
+<script src=styles/common.blocks/top/header/menu-button/menu-button.js></script>
+<script src=styles/common.blocks/top/header/nav-menu/nav-menu.js></script>
 </body>
 </html>

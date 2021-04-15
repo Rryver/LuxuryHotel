@@ -7,24 +7,115 @@
     }
 
     &__img {
+        display: block;
         width: 100%;
         height: auto;
+        position: relative;
     }
 
     &__caption {
         display: inline-block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
         width: 684px;
-        margin-top: -70px;
-        //position: absolute;
-        //bottom: 0;
-        //left: 25%;
         background: @color-white;
-        padding: 16px 120px 0;
+        padding-top: 16px;
+        z-index: 1;
+
         text-align: center;
         font-style: normal;
         font-weight: @font-weight-bold;
         font-size: 48px;
         line-height: 59px;
-        text-align: center;
+    }
+}
+
+@media (max-width: 1095px) {
+    .facilities {
+        &__caption {
+            width: 600px;
+            font-size: 40px;
+            line-height: 50px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .facilities {
+        &__caption {
+            width: 500px;
+            font-size: 35px;
+            line-height: 45px;
+        }
+    }
+}
+
+@media (max-width: 740px) {
+    .facilities {
+        &__item {
+            margin-bottom: 100px;
+        }
+
+        &__caption {
+            width: 400px;
+            padding-top: 10px;
+            font-size: 30px;
+            line-height: 35px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .facilities {
+        &__caption {
+            width: 350px;
+            font-size: 25px;
+            line-height: 30px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .facilities {
+        &__item {
+            margin-bottom: 60px;
+        }
+
+        &__caption {
+            width: 270px;
+            padding-top: 8px;
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .facilities {
+        &__item {
+            margin-bottom: 40px;
+        }
+
+        &__caption {
+            width: 230px;
+            padding-top: 8px;
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
+}
+
+@media (max-width: 300px) {
+    .facilities {
+        &__caption {
+            width: 100%;
+            padding-top: 8px;
+            font-size: 20px;
+            line-height: 25px;
+        }
     }
 }

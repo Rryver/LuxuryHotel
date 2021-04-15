@@ -1,0 +1,53 @@
+.btn-view-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    outline: none;
+    border: none;
+    padding: 0;
+
+    &__circle {
+        display: inline-block;
+        position: relative;
+        background: @color-buttons-common;
+        width: 51px;
+        height: 51px;
+        border-radius: 50%;
+        transition: all ease .2s;
+    }
+
+    &__line {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        background: @color-white;
+        width: 70%;
+        height: 4px;
+    }
+
+    &__line-horizontal {}
+    &__line-vertical {
+        transform: rotate(90deg);
+    }
+
+    &__text {
+        margin-left: 40px;
+        font-style: normal;
+        font-weight: @font-weight-bold;
+        font-size: 25px;
+        line-height: 30px;
+        color: @color-black;
+    }
+}
+
+.btn-view-details:hover {
+    cursor: pointer;
+}
+.btn-view-details:hover>.btn-view-details__circle {
+    background: @color-buttons-hover;
+}
