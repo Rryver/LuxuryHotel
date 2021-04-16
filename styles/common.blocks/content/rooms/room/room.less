@@ -30,9 +30,38 @@
     }
 
     &__buttons {
-        padding: 78px 0;
+        padding: 41px 0;
         display: flex;
         justify-content: space-around;
         align-items: center;
+    }
+}
+
+@media (max-width: 840px) {
+    .room {
+        &__buttons {
+            flex-direction: column;
+            padding: 25px 0;
+        }
+
+        &__btn-view-details {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 740px) {
+    .room {
+        &__name {
+            padding: 25px 0;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .room {
+        &__name {
+            padding: 15px 0;
+        }
     }
 }

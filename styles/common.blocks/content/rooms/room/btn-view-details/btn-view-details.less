@@ -43,11 +43,27 @@
         line-height: 30px;
         color: @color-black;
     }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover>.btn-view-details__circle {
+        background: @color-buttons-hover;
+    }
 }
 
-.btn-view-details:hover {
-    cursor: pointer;
-}
-.btn-view-details:hover>.btn-view-details__circle {
-    background: @color-buttons-hover;
+@media (max-width: 450px) {
+    .btn-view-details {
+        &__circle {
+            width: 40px;
+            height: 40px;
+        }
+
+        &__text {
+            margin-left: 25px;
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
 }
