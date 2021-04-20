@@ -1,0 +1,45 @@
+.contacts {
+    display: inline-block;
+    max-width: 657px;
+    text-align: left;
+
+
+    &__view-map {
+        display: block;
+        margin: 28px 0 54px;
+        transition: all ease .2s;
+        transform-origin: left;
+
+        &:hover {
+            color: @color-black-hover;
+
+            transform: scale(1.02);
+        }
+
+    }
+
+    &__arrow {
+        margin-left: 30px;
+        vertical-align: middle;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: @font-weight-normal;
+        font-size: 40px;
+        line-height: 49px;
+        color: @color-black;
+
+        &_bold {
+            font-weight: @font-weight-bold;
+        }
+    }
+
+    &__link {
+        margin-left: 10px;
+
+        &:hover {
+            text-decoration: solid underline 2px;
+        }
+    }
+}

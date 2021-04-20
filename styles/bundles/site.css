@@ -338,9 +338,6 @@ section {
   position: relative;
   margin-bottom: 193px;
 }
-.contact-us .header {
-  margin-bottom: 47px;
-}
 @media (max-width: 1095px) {
   .header {
     flex-direction: column;
@@ -615,7 +612,7 @@ section {
 .offer__info_small-screen .offer__description {
   display: inline-block;
 }
-@media (max-width: 900px) OR (max-device-width: 500px) {
+@media (max-width: 1000px) {
   .offer {
     flex-direction: column;
     border-left: 2px solid #14274A;
@@ -650,8 +647,8 @@ section {
 }
 @media (max-width: 740px) {
   .offer__title {
-    font-size: 55px;
-    line-height: 65px;
+    font-size: 45px;
+    line-height: 45px;
   }
   .offer__description {
     font-size: 20px;
@@ -1153,6 +1150,12 @@ section {
   line-height: 20px;
   color: #FFFFFF;
 }
+@media (max-width: 370px) {
+  .subscribe {
+    width: 100%;
+    align-self: center;
+  }
+}
 .subscribe-form {
   display: block;
 }
@@ -1178,6 +1181,9 @@ section {
   line-height: 20px;
   color: #FFFFFF;
 }
+.subscribe-form__input:focus::placeholder {
+  color: transparent;
+}
 .subscribe-form__button-submit {
   margin-left: -4px;
   vertical-align: middle;
@@ -1193,7 +1199,7 @@ section {
   cursor: pointer;
   background: #b7975c;
 }
-@media (max-width: 300px) {
+@media (max-width: 370px) {
   .subscribe-form {
     text-align: center;
   }
@@ -1255,6 +1261,69 @@ section {
     width: 50px;
     height: auto;
   }
+}
+.contact-us .header {
+  margin-bottom: 47px;
+}
+.contacts {
+  display: inline-block;
+  max-width: 657px;
+  text-align: left;
+}
+.contacts__view-map {
+  display: block;
+  margin: 28px 0 54px;
+  transition: all ease 0.2s;
+  transform-origin: left;
+}
+.contacts__view-map:hover {
+  color: #1f386a;
+  transform: scale(1.02);
+}
+.contacts__arrow {
+  margin-left: 30px;
+  vertical-align: middle;
+}
+.contacts__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+  color: #14274A;
+}
+.contacts__text_bold {
+  font-weight: 700;
+}
+.contacts__link {
+  margin-left: 10px;
+}
+.contacts__link:hover {
+  text-decoration: solid underline 2px;
+}
+.contact-form {
+  display: inline-block;
+  width: 570px;
+  text-align: right;
+}
+.contact-form__input-form {
+  margin-bottom: 30px;
+}
+.contact-form__input-form:last-child {
+  margin-bottom: 0;
+}
+.input-form {
+  display: block;
+  text-align: left;
+}
+.input-form__label {
+  display: block;
+}
+.input-form__input-field {
+  display: block;
+  width: 100%;
+  height: 78px;
+  outline: none;
+  border: 2px solid rgba(20, 39, 74, 0.5);
 }
 .hidden {
   display: none;

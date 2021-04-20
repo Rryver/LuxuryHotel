@@ -24,6 +24,10 @@
             line-height: 20px;
             color: @color-white;
         }
+
+        &:focus::placeholder {
+            color: transparent;
+        }
     }
 
     &__button-submit {
@@ -45,7 +49,7 @@
 }
 
 
-@media (max-width: 300px) {
+@media (max-width: 370px) {
     .subscribe-form {
         text-align: center;
 
