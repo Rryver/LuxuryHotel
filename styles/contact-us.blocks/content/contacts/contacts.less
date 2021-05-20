@@ -2,6 +2,8 @@
     display: inline-block;
     max-width: 657px;
     text-align: left;
+    vertical-align: top;
+    float: left;
 
 
     &__view-map {
@@ -40,6 +42,22 @@
 
         &:hover {
             text-decoration: solid underline 2px;
+        }
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .contact-us {
+        .contacts {
+            &__text {
+                font-size: 20px;
+                line-height: 27px;
+            }
+
+            &__arrow {
+                width: 35px;
+                margin-left: 20px;
+            }
         }
     }
 }

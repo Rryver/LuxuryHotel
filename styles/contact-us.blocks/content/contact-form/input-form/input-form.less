@@ -9,8 +9,26 @@
     &__input-field {
         display: block;
         width: 100%;
-        height: 78px;
+        height: 50px;
         outline: none;
         border: 2px solid rgba(20, 39, 74, 0.5);
+        font-size: 20px;
+        padding-left: 20px;
+
+        &_multiline {
+            min-height: 352px;
+            padding-top: 15px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 740px) {
+    .contact-us {
+        .input-form {
+            &__input-field {
+                font-size: 20px;
+            }
+        }
     }
 }
